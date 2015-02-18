@@ -45,7 +45,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'tmp/',
-                    src: ['*.html', '*.css', '!**/replace*.*', '!*.php', '!baseDir.html', '!baseDirOverride.html', '!cdnPath.html', '!deleteOriginals.html']
+                    src: ['*.html', '*.css', '!**/replace*.*', '!*.php', '!baseDir.html', '!baseDirOverride.html', '!cdnPath.html', '!deleteOriginals.html', 'assets/external-ignore.html']
                 }]
             },
             rename: {
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
                     }
                 },
                 files: [{
-                    src: ['tmp/replace*.*', 'tmp/cdnPath.html', 'tmp/css/*.css']
+                    src: ['tmp/replace*.*', 'tmp/cdnPath.html', 'tmp/css/*.css', 'assets/external-ignore.html']
                 }]
             },
             deleteOriginals: {
